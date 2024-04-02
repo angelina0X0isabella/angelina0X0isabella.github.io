@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteBowl</title>
+
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        body{
+            background-color: azure;
+        }
+        
+        /* Style Menu */
+        .card-text{
+            text-align: justify;
+            font-family: Cambria;
+        }
+
+        /* Style Testimoni */
+        .profil img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        }
+        .bintang {
+        color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fw-bold">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fa-solid fa-bowl-food"></i>
+                <a class="navbar-brand" href="#">TasteBowl</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">
+                            <img src="menu.png" alt="" width="23" height="23">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keranjang" id="cart-link">
+                            <img src="keranjang.png" alt="" width="23" height="23">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimoni">
+                            <img src="testimoni.png" alt="" width="23" height="23">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Menu -->
+    <div class="container mt-4">
+        <h2 id="menu"><strong>Menu Makanan</strong></h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Poke Bowl Hawai.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Poke Bowl Hawai</strong></h5>
+                        <p class="card-text">Potongan daging salmon segar yang dimarinasi dengan saus teriyaki, dilengkapi dengan irisan alpukat, timun, tobiko, dan topping nori. Disajikan di atas nasi sushi yang lembut.</p>
+                        <h5><strong>Rp 65.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Poke Bowl Hawai" data-price="65000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Buddha Bowl Sayur Segar.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Buddha Bowl Sayur Segar</strong></h5>
+                        <p class="card-text">Campuran sayuran organik seperti brokoli, kacang polong, wortel panggang, dan tomat ceri yang disajikan di atas quinoa lembut. Ditaburi dengan biji-bijian panggang dan saus balsamic vinaigrette.</p>
+                        <h5><strong>Rp 55.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Buddha Bowl Sayur Segar" data-price="55000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Teriyaki Chicken Bowl.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Teriyaki Chicken Bowl</strong></h5>
+                        <p class="card-text">Potongan ayam panggang dengan saus teriyaki yang kaya rasa, disajikan dengan wortel dan buncis tumis. Topping dengan biji wijen dan irisan daun bawang segar di atas nasi putih.</p>
+                        <h5><strong>Rp 60.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Teriyaki Chicken Bowl" data-price="60000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Nasi Goreng Thai Bowl.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Nasi Goreng Thai Bowl</strong></h5>
+                        <p class="card-text">Nasi goreng thai dengan rasa pedas manis, dicampur dengan udang segar, potongan telur dadar, dan sayuran. Taburi dengan kacang tanah goreng.</p>
+                        <h5><strong>Rp 70.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Nasi Goreng Thai Bowl" data-price="70000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Vegan Quinoa Bowl.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Vegan Quinoa Bowl</strong></h5>
+                        <p class="card-text">Quinoa berpadu dengan tahu goreng renyah, edamame, kubis ungu, dan lobak. Dihidangkan dengan dressing lemon dan taburan wijen panggang.</p>
+                        <h5><strong>Rp 50.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Vegan Quinoa Bowl" data-price="50000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Salmon Teriyaki Bowl.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Salmon Teriyaki Bowl</strong></h5>
+                        <p class="card-text">Irisan salmon panggang dengan saus teriyaki lezat, disajikan dengan salad hijau, timun segar, dan telur rebus. Atasinya ditaburi dengan nori dan biji wijen.</p>
+                        <h5><strong>Rp 75.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Salmon Teriyaki Bowl" data-price="75000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Green Tea Matcha Latte.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Green Tea Matcha Latte</strong></h5>
+                        <p class="card-text">Minuman yang menyegarkan dengan campuran bubuk matcha yang kaya antioksidan, susu hangat, dan sedikit gula.</p>
+                        <h5><strong>Rp 25.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Green Tea Matcha Latte" data-price="25000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Thai Iced Coffe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Thai Iced Coffe</strong></h5>
+                        <p class="card-text">Minuman kopi Thailand yang kaya rasa dengan campuran kopi hitam yang kuat, susu kental manis, dan gula. Disajikan dingin dengan es batu.</p>
+                        <h5><strong>Rp 20.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Thai Iced Coffe" data-price="20000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Smoothie Buah Segar.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Smoothie Buah Segar</strong></h5>
+                        <p class="card-text">Minuman smoothie yang terbuat dari campuran buah-buahan segar seperti stroberi, pisang, dan blueberry. Disajikan dingin dengan es batu.</p>
+                        <h5><strong>Rp 20.000</strong></h5><br>
+                        <a href="#keranjang" class="btn btn-warning btn-add-to-cart" data-name="Smoothie Buah Segar" data-price="20000">Tambah ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Keranjang Belanja -->
+    <div class="container mt-4" id="cart-section" style="display:none;">
+        <h2 id="keranjang"><strong>Keranjang Belanja</strong></h2>
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Harga</th>
+            <th scope="col">Jumlah</th>
+            <th scope="col">Total</th>
+            <th scope="col">Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="cart-body">
+            <!-- Baris untuk item dalam keranjang belanja akan ditambahkan di sini -->
+        </tbody>
+        </table>
+        <h4><strong>Total Belanja: <span id="total-price">Rp 0</span></strong></h4><br>
+        <form action="">
+            <label for="">
+                <h6>Catatan untuk Resto:</h6>
+            </label><br>
+            <textarea cols="70" rows="2"></textarea>
+        </form><br>
+        <button class="btn btn-success" id="checkout">Checkout</button>
+    </div>
+    <!-- End Keranjang Belanja -->
+
+    <!-- Testimoni -->
+    <div class="container mt-4">
+        <div class="row">
+            <h2 id="testimoni"><strong>Ulasan & Rating</strong></h2>
+            <div class="profil">
+                <img src="Profil.jpg" alt="Profil Pelanggan 1">
+                <div class="nama"><strong>John Doe</strong></div>
+                <div><small>Poke Bowl Hawai</small></div>
+                <div class="bintang">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                <p class="ulasan">Makanan di Tastebowl enak sekali! Pelayanan juga ramah, saya pasti akan beli lagi!</p>
+    
+                <img src="Profil.jpg" alt="Profil Pelanggan 2">
+                <div class="nama"><strong>Jane Smith</strong></div>
+                <div>
+                    <small>
+                        Salmon Teriyaki Bowl, Smoothie Buah Segar
+                    </small>
+                    
+                </div>
+                <div class="bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="ulasan">Saya sangat puas dengan rasa makanan di Tastebowl!</p><br><br>
+            </div>
+        </div> 
+    </div>
+    <!-- End Testimoni -->
+
+    <!-- CDN JS Bootsrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="TasteBowl.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</body>
+</html>
